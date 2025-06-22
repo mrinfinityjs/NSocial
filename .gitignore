@@ -1,0 +1,85 @@
+# ===================================================================
+# Node.js
+# ===================================================================
+
+# Dependencies
+# ----------------
+# The node_modules folder contains all of your project's dependencies.
+# It can be very large and should always be ignored. It can be
+# recreated by running `npm install`.
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# User-generated Configuration Files
+# ----------------
+# Ignore all .json files by default...
+*.json
+
+# ...but EXPLICITLY DO NOT ignore these essential project files.
+# The '!' negates a previous rule.
+!package.json
+
+# NOTE: The user requested to ignore package-lock.json.
+# This is generally NOT recommended for applications because this file locks
+# dependency versions, ensuring everyone who runs `npm install` gets the
+# exact same setup, preventing "it works on my machine" bugs.
+# For personal projects or if you understand the implications, you can
+# leave this line. For team projects, you should strongly consider
+# deleting the line below to commit your package-lock.json file.
+!package-lock.json
+
+
+# ===================================================================
+# General
+# ===================================================================
+
+# Operating System Files
+# ----------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE / Editor Folders
+# ----------------
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Logs
+# ----------------
+logs
+*.log
+*.log.*
+
+# Runtime Data
+# ----------------
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Build & Test Output
+# ----------------
+dist/
+build/
+.out/
+coverage/
+.nyc_output/
+
+# Environment Variables
+# ----------------
+# Never commit your .env file which may contain secrets.
+# It's good practice to commit a .env.example file instead.
+.env
+.env.*
+!.env.example
+!.env.template
